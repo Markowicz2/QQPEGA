@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    tools:context=".activity.DetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_tipo_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/back_details"
+                android:layout_toRightOf="@+id/back_details"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logo_detalhe"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_detalhe"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/l_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_nome_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Bar do Dedinho"
+                android:textColor="#000000"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_cdb_detalhe"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/l_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+
+                android:gravity="center"
+                android:src="@mipmap/cdbic"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/div"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/tv_nome_detalhe"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#FF00FF00" />
+
+
+            <TextView
+                android:id="@+id/tv_endereco_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/m_pin2"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_endereco2_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/tv_endereco_detalhe"
+                android:layout_toRightOf="@id/tv_endereco_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_telefone_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_endereco2_detalhe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/ic_phone"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_telefone2_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_endereco2_detalhe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/tv_telefone_detalhe"
+                android:layout_toRightOf="@id/tv_telefone_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/tv_celular_detalhe"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_telefone2_detalhe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_wpp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_celular2_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_telefone2_detalhe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/tv_telefone_detalhe"
+                android:layout_toRightOf="@id/tv_telefone_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/valor_entrada_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_endereco2_detalhe"
+                android:layout_alignTop="@+id/tv_telefone2_detalhe"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp" />
+
+            <View
+                android:id="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/tv_celular2_detalhe"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="#FF00FF00" />
+
+            <TextView
+                android:id="@+id/tv_horario_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div2"
+                android:layout_marginTop="10dp"
+                android:background="@color/silver"
+                android:paddingLeft="10dp"
+                android:text="Horario de funcionamento do dia:"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_h0_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_horario_detalhe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_h0_detalhe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tv_promocoes_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_h"
+                android:background="@color/silver"
+                android:paddingLeft="10dp"
+                android:text="@string/promocoes"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_promocoes2_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_promocoes_detalhe"
+                android:layout_alignLeft="@id/tv_h0_detalhe"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_atracao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_promocoes2_detalhe"
+
+                android:background="@color/silver"
+                android:paddingLeft="10dp"
+                android:text="@string/atracao"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_nome_atracao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_atracao"
+                android:layout_alignLeft="@id/tv_h0_detalhe"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_tipo_atracao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nome_atracao"
+                android:layout_alignLeft="@id/tv_h0_detalhe"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_hora_atracao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tipo_atracao"
+                android:layout_alignLeft="@id/tv_h0_detalhe"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/tv_ambiente_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tipo_atracao"
+                android:layout_marginTop="5dp"
+                android:background="@color/silver"
+                android:paddingLeft="10dp"
+                android:text="Ambiente"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_open_area_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ambiente_detalhe"
+                android:layout_marginLeft="15dp"
+                android:text="Área aberta" />
+
+            <TextView
+                android:id="@+id/tv_close_area_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ambiente_detalhe"
+                android:layout_alignLeft="@+id/tv_music"
+                android:layout_toEndOf="@+id/tv_open_area_detalhe"
+                android:layout_toRightOf="@+id/tv_open_area_detalhe"
+                android:text="Área fechada" />
+
+            <TextView
+                android:id="@+id/tv_smoke_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ambiente_detalhe"
+                android:layout_marginLeft="15dp"
+                android:layout_toEndOf="@+id/tv_close_area_detalhe"
+                android:layout_toRightOf="@+id/tv_close_area_detalhe"
+                android:text="Área de fumante" />
+
+            <TextView
+                android:id="@+id/tv_table_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_open_area_detalhe"
+                android:layout_alignLeft="@+id/tv_open_area_detalhe"
+                android:text="Possui mesas" />
+
+            <TextView
+                android:id="@+id/tv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_open_area_detalhe"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/tv_table_detalhe"
+                android:layout_toRightOf="@+id/tv_table_detalhe"
+
+                android:text="@string/music" />
+
+            <TextView
+                android:id="@+id/tv_park_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_open_area_detalhe"
+                android:layout_alignTop="@+id/tv_table_detalhe"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/tv_music"
+                android:layout_toRightOf="@+id/tv_music"
+                android:text="@string/park" />
+
+            <TextView
+                android:id="@+id/tv_sinuca_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_table_detalhe"
+                android:layout_alignLeft="@id/tv_table_detalhe"
+                android:text="@string/sinuca" />
+
+            <TextView
+                android:id="@+id/tv_play_ground_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_table_detalhe"
+                android:layout_alignLeft="@id/tv_music"
+                android:layout_toEndOf="@id/tv_sinuca_detalhe"
+                android:layout_toRightOf="@id/tv_sinuca_detalhe"
+
+                android:text="@string/play_ground" />
+
+            <TextView
+                android:id="@+id/tv_possui_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_play_ground_detalhe"
+                android:background="@color/silver"
+                android:paddingLeft="10dp"
+                android:text="@string/possui"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chk_long_neck_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_possui_detalhe"
+                android:layout_marginLeft="15dp"
+                android:text="@string/longneck" />
+
+            <CheckBox
+                android:id="@+id/chk_botle_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_possui_detalhe"
+                android:layout_alignLeft="@id/tv_music"
+                android:layout_toEndOf="@+id/chk_long_neck_detalhe"
+                android:layout_toRightOf="@+id/chk_long_neck_detalhe"
+                android:text="@string/botle"
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_litrao_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_possui_detalhe"
+
+                android:layout_toEndOf="@+id/chk_botle_detalhe"
+                android:layout_toRightOf="@+id/chk_botle_detalhe"
+                android:text="@string/litrao" />
+
+            <CheckBox
+                android:id="@+id/chk_litrinho_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_long_neck_detalhe"
+                android:layout_alignLeft="@id/chk_long_neck_detalhe"
+                android:text="@string/litrinho" />
+
+            <CheckBox
+                android:id="@+id/chk_lata_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_botle_detalhe"
+                android:layout_alignLeft="@id/chk_botle_detalhe"
+                android:layout_toEndOf="@+id/chk_litrinho_detalhe"
+                android:layout_toRightOf="@+id/chk_litrinho_detalhe"
+                android:text="@string/lata" />
+
+            <!-- Tabela valores -->
+
+
+            <TextView
+                android:id="@+id/tv_price_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_litrinho_detalhe"
+                android:paddingLeft="10dp"
+                android:background="@color/silver"
+                android:text="@string/price"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_latao_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginLeft="105dp"
+                android:text="@string/latao" />
+
+            <TextView
+                android:id="@+id/tv_long_neck_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price_detalhe"
+                android:layout_marginLeft="54dp"
+                android:layout_toEndOf="@+id/tv_latao_detalhe"
+                android:layout_toRightOf="@id/tv_latao_detalhe"
+                android:text="@string/longneck" />
+
+            <TextView
+                android:id="@+id/tv_botle_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price_detalhe"
+                android:layout_alignTop="@+id/tv_long_neck_detalhe"
+                android:layout_marginLeft="35dp"
+                android:layout_toEndOf="@id/tv_long_neck_detalhe"
+                android:layout_toRightOf="@id/tv_long_neck_detalhe"
+                android:text="@string/botle" />
+
+            <TextView
+                android:id="@+id/tv_amstel_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginTop="25dp"
+                android:text="@string/amstel" />
+
+            <TextView
+                android:id="@+id/edit_latao_amstel_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_long_neck_detalhe"
+                android:layout_alignLeft="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tv_amstel_detalhe"
+                android:layout_toRightOf="@id/tv_amstel_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_long_neck_amstel_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_long_neck_detalhe"
+                android:layout_alignLeft="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/edit_latao_amstel_detalhe"
+                android:layout_toRightOf="@id/edit_latao_amstel_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_garrafa_amstel_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_long_neck_detalhe"
+                android:layout_alignLeft="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/edit_long_neck_amstel_detalhe"
+                android:layout_toRightOf="@id/edit_long_neck_amstel_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+
+            <TextView
+                android:id="@+id/tv_brahma_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_amstel_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginTop="25dp"
+                android:text="@string/brahma"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edit_latao_brahma_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_latao_amstel_detalhe"
+                android:layout_alignLeft="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_brahma_detalhe"
+                android:layout_toEndOf="@+id/tv_brahma_detalhe"
+                android:layout_toRightOf="@id/tv_brahma_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_long_neck_brahma_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_long_neck_amstel_detalhe"
+                android:layout_alignLeft="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_brahma_detalhe"
+                android:layout_toEndOf="@+id/edit_latao_brahma_detalhe"
+                android:layout_toRightOf="@id/edit_latao_brahma_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_garrafa_brahma_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_garrafa_amstel_detalhe"
+                android:layout_alignLeft="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_brahma_detalhe"
+                android:layout_toEndOf="@+id/edit_long_neck_brahma_detalhe"
+                android:layout_toRightOf="@id/edit_long_neck_brahma_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_heineken_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_brahma_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginTop="25dp"
+                android:text="@string/heineken"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edit_latao_heineken_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_latao_brahma_detalhe"
+                android:layout_alignLeft="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_heineken_detalhe"
+                android:layout_toEndOf="@+id/tv_heineken_detalhe"
+                android:layout_toRightOf="@id/tv_heineken_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_long_neck_heineken_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_long_neck_brahma_detalhe"
+                android:layout_alignLeft="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_heineken_detalhe"
+                android:layout_toEndOf="@+id/edit_latao_heineken_detalhe"
+                android:layout_toRightOf="@id/edit_latao_heineken_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_garrafa_heineken_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_garrafa_brahma_detalhe"
+                android:layout_alignLeft="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_heineken_detalhe"
+                android:layout_toEndOf="@+id/edit_long_neck_heineken_detalhe"
+                android:layout_toRightOf="@id/edit_long_neck_heineken_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_budwiser_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_heineken_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginTop="25dp"
+                android:text="@string/budwiser"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edit_latao_budwiser_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_latao_heineken_detalhe"
+                android:layout_alignLeft="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_budwiser_detalhe"
+                android:layout_toEndOf="@+id/tv_budwiser_detalhe"
+                android:layout_toRightOf="@id/tv_budwiser_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_long_neck_budwiser_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_long_neck_heineken_detalhe"
+                android:layout_alignLeft="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_budwiser_detalhe"
+                android:layout_toEndOf="@+id/edit_latao_budwiser_detalhe"
+                android:layout_toRightOf="@id/edit_latao_budwiser_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_garrafa_budwiser_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_garrafa_heineken_detalhe"
+                android:layout_alignLeft="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_budwiser_detalhe"
+                android:layout_toEndOf="@+id/edit_long_neck_budwiser_detalhe"
+                android:layout_toRightOf="@id/edit_long_neck_budwiser_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_eisenbahn_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_budwiser_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginTop="25dp"
+                android:text="@string/eisenbahn"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_latao_budwiser_detalhe"
+                android:layout_alignTop="@+id/tv_eisenbahn_detalhe"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/tv_eisenbahn_detalhe"
+                android:layout_toRightOf="@id/tv_eisenbahn_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_long_neck_budwiser_detalhe"
+                android:layout_alignTop="@+id/tv_eisenbahn_detalhe"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/edit_latao_eisenbahn_detalhe"
+
+                android:layout_toRightOf="@id/edit_latao_eisenbahn_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_garrafa_budwiser_detalhe"
+                android:layout_alignTop="@+id/tv_eisenbahn_detalhe"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_toRightOf="@id/edit_long_neck_eisenbahn_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_original_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_eisenbahn_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginTop="25dp"
+                android:text="@string/original"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edit_latao_original_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_alignLeft="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_original_detalhe"
+                android:layout_toEndOf="@+id/tv_original_detalhe"
+                android:layout_toRightOf="@id/tv_original_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_long_neck_original_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_alignLeft="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_original_detalhe"
+                android:layout_toEndOf="@+id/edit_latao_original_detalhe"
+                android:layout_toRightOf="@id/edit_latao_original_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_garrafa_original_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_alignLeft="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_original_detalhe"
+                android:layout_toEndOf="@+id/edit_long_neck_original_detalhe"
+                android:layout_toRightOf="@id/edit_long_neck_original_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_bohemia_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_original_detalhe"
+                android:layout_alignLeft="@+id/tv_price_detalhe"
+                android:layout_marginTop="25dp"
+                android:text="@string/bohemia"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edit_latao_bohemia_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_latao_original_detalhe"
+                android:layout_alignLeft="@+id/edit_latao_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_bohemia_detalhe"
+                android:layout_toEndOf="@+id/tv_bohemia_detalhe"
+                android:layout_toRightOf="@id/tv_bohemia_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_long_neck_bohemia_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_long_neck_original_detalhe"
+                android:layout_alignLeft="@+id/edit_long_neck_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_bohemia_detalhe"
+                android:layout_toEndOf="@+id/edit_latao_bohemia_detalhe"
+                android:layout_toRightOf="@id/edit_latao_bohemia_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/edit_garrafa_bohemia_detalhe"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_garrafa_original_detalhe"
+                android:layout_alignLeft="@+id/edit_garrafa_eisenbahn_detalhe"
+                android:layout_alignTop="@+id/tv_bohemia_detalhe"
+                android:layout_toEndOf="@+id/edit_long_neck_bohemia_detalhe"
+                android:layout_toRightOf="@id/edit_long_neck_bohemia_detalhe"
+                android:background="@drawable/register_edit_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/cifrao"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_atualizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_garrafa_bohemia_detalhe"
+                android:layout_marginTop="10dp"
+
+
+
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+            <TextView
+                android:id="@+id/tv_atualizacao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_atualizacao"
+                android:layout_marginBottom="10dp"
+                android:text="Os valores podem sofrer alterações."
+
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+            <!--Bebidas -->
+            <TextView
+                android:id="@+id/tv_beer_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_atualizacao2"
+                android:paddingLeft="10dp"
+                android:background="@color/silver"
+                android:text="@string/bebidas"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/chk_dose_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_beer_detalhe"
+                android:layout_marginLeft="15dp"
+                android:text="@string/dose" />
+
+            <CheckBox
+                android:id="@+id/chk_drink_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_beer_detalhe"
+                android:layout_alignLeft="@id/chk_botle_detalhe"
+                android:layout_toEndOf="@+id/chk_dose_detalhe"
+                android:layout_toRightOf="@+id/chk_dose_detalhe"
+                android:text="@string/drink" />
+
+            <CheckBox
+                android:id="@+id/chk_shot_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_beer_detalhe"
+                android:layout_alignLeft="@id/chk_litrao_detalhe"
+                android:layout_toEndOf="@+id/chk_drink_detalhe"
+                android:layout_toRightOf="@+id/chk_drink_detalhe"
+                android:text="@string/shot" />
+
+            <CheckBox
+                android:id="@+id/chk_beer_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_dose_detalhe"
+                android:layout_alignLeft="@id/chk_dose_detalhe"
+                android:text="@string/beer" />
+
+            <CheckBox
+                android:id="@+id/chk_wyne_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_drink_detalhe"
+                android:layout_alignLeft="@id/chk_drink_detalhe"
+                android:text="@string/wyne" />
+
+            <CheckBox
+                android:id="@+id/chk_cerveja_artesanal_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_shot_detalhe"
+                android:layout_alignLeft="@id/chk_shot_detalhe"
+                android:text="@string/cerveja_artesanal" />
+
+            <CheckBox
+                android:id="@+id/chk_chopp_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_beer_detalhe"
+                android:layout_alignLeft="@id/chk_beer_detalhe"
+                android:text="@string/chopp" />
+
+            <TextView
+                android:id="@+id/tv_music_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_chopp_detalhe"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/silver"
+                android:text="@string/estilos"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chk_funk_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_music_detalhe"
+                android:layout_marginLeft="15dp"
+                android:text="@string/funk" />
+
+            <CheckBox
+                android:id="@+id/chk_sertanejo_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_music_detalhe"
+                android:layout_alignLeft="@id/chk_wyne_detalhe"
+                android:layout_alignTop="@id/chk_funk_detalhe"
+                android:layout_toEndOf="@id/chk_funk_detalhe"
+                android:layout_toRightOf="@id/chk_funk_detalhe"
+                android:text="@string/sertanejo" />
+
+            <CheckBox
+                android:id="@+id/chk_pagode_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_music_detalhe"
+                android:layout_alignLeft="@id/chk_cerveja_artesanal_detalhe"
+                android:layout_alignTop="@id/chk_funk_detalhe"
+                android:layout_toEndOf="@id/chk_sertanejo_detalhe"
+                android:layout_toRightOf="@id/chk_sertanejo_detalhe"
+                android:text="@string/pagode" />
+
+            <CheckBox
+                android:id="@+id/chk_forro_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_funk_detalhe"
+                android:layout_alignLeft="@id/chk_funk_detalhe"
+                android:text="@string/forro" />
+
+            <CheckBox
+                android:id="@+id/chk_eletronica_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_funk_detalhe"
+                android:layout_alignLeft="@id/chk_wyne_detalhe"
+                android:layout_alignTop="@id/chk_forro_detalhe"
+                android:layout_toEndOf="@id/chk_forro_detalhe"
+                android:layout_toRightOf="@id/chk_forro_detalhe"
+                android:text="@string/eletronica" />
+
+            <CheckBox
+                android:id="@+id/chk_rock_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_funk_detalhe"
+                android:layout_alignLeft="@id/chk_cerveja_artesanal_detalhe"
+                android:layout_alignTop="@id/chk_eletronica_detalhe"
+                android:layout_toEndOf="@id/chk_eletronica_detalhe"
+                android:layout_toRightOf="@id/chk_eletronica_detalhe"
+                android:text="@string/rock" />
+
+            <CheckBox
+                android:id="@+id/chk_samba_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_forro_detalhe"
+
+                android:layout_alignLeft="@id/chk_forro_detalhe"
+                android:text="@string/samba" />
+
+            <CheckBox
+                android:id="@+id/chk_pop_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_forro_detalhe"
+                android:layout_alignLeft="@id/chk_wyne_detalhe"
+                android:layout_alignTop="@id/chk_samba_detalhe"
+                android:layout_toEndOf="@id/chk_samba_detalhe"
+                android:layout_toRightOf="@id/chk_samba_detalhe"
+                android:text="@string/pop" />
+
+            <CheckBox
+                android:id="@+id/chk_rap_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_forro_detalhe"
+                android:layout_alignLeft="@id/chk_cerveja_artesanal_detalhe"
+                android:layout_alignTop="@id/chk_pop_detalhe"
+                android:layout_toEndOf="@id/chk_pop_detalhe"
+                android:layout_toRightOf="@id/chk_pop_detalhe"
+                android:text="@string/rap" />
+
+            <CheckBox
+                android:id="@+id/chk_hip_hop_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_samba_detalhe"
+                android:layout_alignLeft="@id/chk_samba_detalhe"
+                android:text="@string/hip_hop" />
+
+            <CheckBox
+                android:id="@+id/chk_jazz_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_samba_detalhe"
+                android:layout_alignLeft="@id/chk_wyne_detalhe"
+                android:layout_toEndOf="@id/chk_hip_hop_detalhe"
+                android:layout_toRightOf="@id/chk_hip_hop_detalhe"
+                android:text="@string/jazz" />
+
+            <CheckBox
+                android:id="@+id/chk_sem_musica_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_samba_detalhe"
+                android:layout_alignLeft="@id/chk_cerveja_artesanal_detalhe"
+                android:layout_toEndOf="@id/chk_jazz_detalhe"
+                android:layout_toRightOf="@id/chk_jazz_detalhe"
+                android:text="@string/sem_musica" />
+
+            <TextView
+                android:id="@+id/tv_food_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_hip_hop_detalhe"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/silver"
+                android:text="@string/comidas"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chk_espeto_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_food_detalhe"
+                android:layout_alignLeft="@id/chk_hip_hop_detalhe"
+
+                android:text="@string/espeto" />
+
+            <CheckBox
+                android:id="@+id/chk_porcao_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_food_detalhe"
+                android:layout_alignLeft="@id/chk_jazz_detalhe"
+                android:layout_toEndOf="@id/chk_espeto_detalhe"
+                android:layout_toRightOf="@id/chk_espeto_detalhe"
+                android:text="@string/porcao" />
+
+            <CheckBox
+                android:id="@+id/chk_self_service_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_food_detalhe"
+                android:layout_alignLeft="@id/chk_sem_musica_detalhe"
+                android:layout_toEndOf="@id/chk_porcao_detalhe"
+                android:layout_toRightOf="@id/chk_porcao_detalhe"
+                android:text="@string/selfservice" />
+
+            <CheckBox
+                android:id="@+id/chk_a_la_carte_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_espeto_detalhe"
+                android:layout_alignLeft="@id/chk_espeto_detalhe"
+                android:text="@string/a_la_carte" />
+
+            <TextView
+                android:id="@+id/tv_proibido_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_a_la_carte_detalhe"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/silver"
+                android:text="@string/proibido"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chk_camiseta_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_proibido_detalhe"
+                android:layout_alignLeft="@id/chk_a_la_carte_detalhe"
+                android:text="@string/camiseta" />
+
+            <CheckBox
+                android:id="@+id/chk_bone_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_proibido_detalhe"
+                android:layout_alignLeft="@id/chk_porcao_detalhe"
+                android:layout_toEndOf="@id/chk_camiseta_detalhe"
+                android:layout_toRightOf="@id/chk_camiseta_detalhe"
+                android:text="@string/bone" />
+
+            <CheckBox
+                android:id="@+id/chk_chinelo_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_proibido_detalhe"
+                android:layout_alignLeft="@id/chk_self_service_detalhe"
+                android:layout_toEndOf="@id/chk_bone_detalhe"
+                android:layout_toRightOf="@id/chk_bone_detalhe"
+                android:text="@string/chinelo" />
+
+            <CheckBox
+                android:id="@+id/chk_bermuda_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_camiseta_detalhe"
+                android:layout_alignLeft="@+id/chk_camiseta_detalhe"
+                android:text="@string/bermuda" />
+
+            <CheckBox
+                android:id="@+id/chk_camisa_time_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_camiseta_detalhe"
+                android:layout_alignLeft="@id/chk_bone_detalhe"
+                android:layout_marginBottom="30dp"
+                android:layout_toEndOf="@+id/chk_bermuda_detalhe"
+                android:layout_toRightOf="@id/chk_bermuda_detalhe"
+                android:text="@string/camisa_time" />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabD5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="230dp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_owner"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabD4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_star"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabD3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="130dp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_edit"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabD2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_add_photo"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabD1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/blue"
+        android:elevation="6dp"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+
+</RelativeLayout>

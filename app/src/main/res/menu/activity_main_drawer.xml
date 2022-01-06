@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:checked="true"
+            android:icon="@drawable/ic_map"
+            android:title="@string/map" />
+        <item
+            android:id="@+id/nav_place"
+            android:checked="true"
+            android:icon="@drawable/ic_place"
+            android:title="@string/place" />
+        <item
+            android:id="@+id/nav_favorite_place"
+            android:checked="true"
+            android:icon="@drawable/ic_event"
+            android:title="@string/favorite_place" />
+        <item
+            android:id="@+id/nav_favorite_event"
+            android:checked="true"
+            android:icon="@drawable/ic_event"
+            android:title="@string/favorite_event" />
+        <item
+            android:id="@+id/nav_event"
+            android:checked="true"
+            android:icon="@drawable/ic_evento"
+            android:title="@string/event" />
+        <item
+            android:id="@+id/nav_profile"
+            android:checked="true"
+            android:icon="@drawable/ic_account"
+            android:title="@string/profile" />
+
+    </group>
+</menu>

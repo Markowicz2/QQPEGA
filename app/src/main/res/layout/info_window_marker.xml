@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/fundo_item_window"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_logo_window"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+        <TextView
+            android:id="@+id/nome_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_logo_window"
+            android:layout_toRightOf="@+id/img_logo_window"
+            android:layout_alignLeft="@+id/horario_a_window"
+            android:layout_marginTop="5dp"
+
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--Avaliar essa parte ainda
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/star_icon" />
+
+            -->
+
+        <TextView
+            android:id="@+id/horario_a_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aberto"
+
+            android:layout_toEndOf="@+id/img_logo_window"
+            android:layout_toRightOf="@+id/img_logo_window"
+            android:textColor="@color/green"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/nome_window"
+            />
+        <TextView
+            android:id="@+id/horario_f_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fechado"
+
+            android:layout_toEndOf="@+id/img_logo_window"
+            android:layout_toRightOf="@+id/img_logo_window"
+            android:textColor="@color/red"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/nome_window"
+            />
+        <TextView
+            android:id="@+id/horario_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@+id/horario_a_window"
+            android:layout_toRightOf="@+id/horario_a_window"
+            android:layout_below="@+id/nome_window"
+            />
+        <TextView
+            android:id="@+id/distancia_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,5KM"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/img_logo_window"
+            android:layout_toRightOf="@+id/img_logo_window"
+            android:layout_below="@+id/horario_window"
+            />
+        <TextView
+            android:id="@+id/entrada_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$500"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@+id/horario_window"
+
+            android:layout_marginRight="15dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

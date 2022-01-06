@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "662921172947",
+    "firebase_url": "https://qqpega-e9944.firebaseio.com",
+    "project_id": "qqpega-e9944",
+    "storage_bucket": "qqpega-e9944.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662921172947:android:8b06fa6848556929a54126",
+        "android_client_info": {
+          "package_name": "com.ds.qqpega"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662921172947-7t2l9m9bg4km0tdp4ug3ql6mhcvmgtg8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ds.qqpega",
+            "certificate_hash": "962a10db90167fb6dd39b833f5e663855abb1645"
+          }
+        },
+        {
+          "client_id": "662921172947-maseblf2168eomm67pkuuu2ll265qbh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ds.qqpega",
+            "certificate_hash": "3173666cca0f71727070e4a66a16b28f6c33aaec"
+          }
+        },
+        {
+          "client_id": "662921172947-i3kb5iu82pa71vqjk0a5m21h523ectgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjUB6VuaCxQpcsSJu7lIz9CAFEDO60_KI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662921172947-i3kb5iu82pa71vqjk0a5m21h523ectgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

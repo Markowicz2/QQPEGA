@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignIn">
+
+    <EditText
+        android:id="@+id/edit_nome_sign"
+        android:paddingLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/login_edittext_bg"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_photo_sign" />
+
+    <EditText
+        android:id="@+id/edit_email_signin"
+        android:paddingLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/login_edittext_bg"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edit_nome_sign"
+        app:layout_constraintStart_toStartOf="@+id/edit_nome_sign"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome_sign" />
+
+    <EditText
+        android:id="@+id/edit_password_signin"
+        android:paddingLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/login_edittext_bg"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email_signin"
+        app:layout_constraintStart_toStartOf="@+id/edit_email_signin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email_signin" />
+
+    <Button
+        android:id="@+id/bt_signin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/register"
+        android:background="@drawable/login_button_bg"
+        app:layout_constraintEnd_toEndOf="@+id/edit_password_signin"
+        app:layout_constraintStart_toStartOf="@+id/edit_password_signin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_signin" />
+
+    <Button
+        android:id="@+id/bt_photo_sign"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/photo"
+        android:background="@drawable/login_button_bg"
+        app:layout_constraintBottom_toTopOf="@+id/edit_nome_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_photo_sign"
+        app:layout_constraintEnd_toEndOf="@+id/bt_photo_sign"
+        app:layout_constraintTop_toTopOf="@+id/bt_photo_sign"
+        />
+
+    <Button
+        android:id="@+id/bt_sigin_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_bg"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="@+id/bt_signin"
+        app:layout_constraintStart_toStartOf="@+id/bt_signin"
+        app:layout_constraintTop_toBottomOf="@+id/bt_signin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

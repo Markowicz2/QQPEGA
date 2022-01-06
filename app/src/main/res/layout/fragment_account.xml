@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/silver">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="130dp"
+        android:layout_toEndOf="@id/img_profile"
+        android:layout_toRightOf="@+id/img_profile"
+        android:layout_marginLeft="-40dp"
+        android:id="@+id/fab_img_profile"
+        android:src="@drawable/ic_camera"
+        app:fabSize="mini"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/tv_nome_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_profile"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/ic_person"
+        android:layout_toRightOf="@id/ic_person"
+        android:padding="10dp"
+        android:text="@string/nome"/>
+    <ImageView
+        android:id="@+id/ic_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_profile"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_person"/>
+
+    <TextView
+        android:id="@+id/nome_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nome_profile"
+
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@id/tv_nome_profile"
+        android:padding="10dp"
+        android:text="SampleName"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#FF00FF00"
+        android:layout_below="@id/nome_profile"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/div"/>
+
+    <TextView
+        android:id="@+id/tv_mail_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/ic_person"
+        android:layout_toRightOf="@id/ic_person"
+        android:padding="10dp"
+        android:text="@string/email"/>
+    <ImageView
+        android:id="@+id/ic_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_email"/>
+
+    <TextView
+        android:id="@+id/email_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mail_profile"
+
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@id/tv_mail_profile"
+        android:padding="10dp"
+        android:text="SampleName"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#FF00FF00"
+        android:layout_below="@id/email_profile"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/div2"/>
+
+    <ImageView
+        android:id="@+id/ic_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div2"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_exit"/>
+
+    <TextView
+        android:id="@+id/logout_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mail_profile"
+
+        android:layout_alignLeft="@id/email_profile"
+        android:layout_alignTop="@id/ic_logout"
+        android:padding="10dp"
+        android:text="Logout"/>
+
+
+</RelativeLayout>
