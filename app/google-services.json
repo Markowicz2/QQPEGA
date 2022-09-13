@@ -1,50 +1,87 @@
 {
   "project_info": {
-    "project_number": "662921172947",
-    "firebase_url": "https://qqpega-e9944.firebaseio.com",
-    "project_id": "qqpega-e9944",
-    "storage_bucket": "qqpega-e9944.appspot.com"
+    "project_number": "52362463714",
+    "firebase_url": "https://qqpega2-acb07.firebaseio.com",
+    "project_id": "qqpega2-acb07",
+    "storage_bucket": "qqpega2-acb07.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:662921172947:android:8b06fa6848556929a54126",
+        "mobilesdk_app_id": "1:52362463714:android:812cabef9d460e45cc11bb",
         "android_client_info": {
           "package_name": "com.ds.qqpega"
         }
       },
       "oauth_client": [
         {
-          "client_id": "662921172947-7t2l9m9bg4km0tdp4ug3ql6mhcvmgtg8.apps.googleusercontent.com",
+          "client_id": "52362463714-vsris247v9u3upbliai1irgdnid4bq5e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.ds.qqpega",
-            "certificate_hash": "962a10db90167fb6dd39b833f5e663855abb1645"
+            "certificate_hash": "b198515223b5b67abcf4509c94f265ba1d8193b1"
           }
         },
         {
-          "client_id": "662921172947-maseblf2168eomm67pkuuu2ll265qbh0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.ds.qqpega",
-            "certificate_hash": "3173666cca0f71727070e4a66a16b28f6c33aaec"
-          }
-        },
-        {
-          "client_id": "662921172947-i3kb5iu82pa71vqjk0a5m21h523ectgr.apps.googleusercontent.com",
+          "client_id": "52362463714-avoq6birl8g1va29vc4r16hs1negq1gl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCjUB6VuaCxQpcsSJu7lIz9CAFEDO60_KI"
+          "current_key": "AIzaSyBEfW2sjguwA0giurSvPM-KhmppCGRfVRc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "662921172947-i3kb5iu82pa71vqjk0a5m21h523ectgr.apps.googleusercontent.com",
+              "client_id": "52362463714-avoq6birl8g1va29vc4r16hs1negq1gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52362463714:android:75cdc37da015a4f8cc11bb",
+        "android_client_info": {
+          "package_name": "com.ds.qqpega2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52362463714-93lc37pu9dpfs0027bkanffgt5gqr5sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ds.qqpega2",
+            "certificate_hash": "3173666cca0f71727070e4a66a16b28f6c33aaec"
+          }
+        },
+        {
+          "client_id": "52362463714-r47ek6bsslllo6ja441bt7369q32j9m0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ds.qqpega2",
+            "certificate_hash": "962a10db90167fb6dd39b833f5e663855abb1645"
+          }
+        },
+        {
+          "client_id": "52362463714-avoq6birl8g1va29vc4r16hs1negq1gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEfW2sjguwA0giurSvPM-KhmppCGRfVRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52362463714-avoq6birl8g1va29vc4r16hs1negq1gl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

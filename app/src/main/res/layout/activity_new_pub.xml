@@ -66,7 +66,8 @@
                 android:ems="10"
                 android:hint="@string/phone"
                 android:inputType="number"
-                android:paddingLeft="10dp" />
+                android:paddingLeft="10dp"
+                android:autofillHints="" />
             <EditText
                 android:id="@+id/celphone_place"
                 android:layout_width="wrap_content"
@@ -1371,7 +1372,7 @@
                 android:layout_alignLeft="@id/chk_jazz"
                 android:text="@string/porcao" />
             <CheckBox
-                android:id="@+id/chk_self-service"
+                android:id="@+id/chk_self_service"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_food"
@@ -1429,7 +1430,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_proibido"
-                android:layout_alignLeft="@id/chk_self-service"
+                android:layout_alignLeft="@id/chk_self_service"
                 android:layout_toEndOf="@id/chk_bone"
                 android:layout_toRightOf="@id/chk_bone"
                 android:text="@string/chinelo" />

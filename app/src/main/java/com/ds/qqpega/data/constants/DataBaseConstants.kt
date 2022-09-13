@@ -1,0 +1,121 @@
+package com.ds.qqpega.data.constants
+
+class DataBaseConstants private constructor(){
+
+
+
+    /**
+     * Tabelas disponives no baco de dados
+     */
+
+    object QQpega{
+        const val TABLE_NAME = "QQPega"
+
+        object COLUMNS{
+            const val id ="id"
+            const val address = "address"
+            const val area_aberta = "area_aberta"
+            const val area_fechada = "area_fechada"
+            const val area_fumante = "area_fumante"
+            const val mesas = "mesas"
+            const val dose = "dose"
+            const val shot = "shot"
+            const val vinhos = "vinhos"
+            const val cerveja_artsanal = "cerveja_artsanal"
+            const val cerveja ="cerveja"
+            const val chopp = "chopp"
+            const val amstel_l = "amstel_l"
+            const val amstel_ln = "amstel_ln"
+            const val amstel_g = "amstel_g"
+            const val brahma_l = "brahma_l"
+            const val brahma_ln = "brahma_ln"
+            const val brahma_g = "brahma_g"
+            const val heineken_l = "heineken_l"
+            const val heineken_ln = "heineken_ln"
+            const val heineken_g = "heineken_g"
+            const val bud_l = "bud_l"
+            const val bud_ln = "bud_ln"
+            const val bud_g = "bud_g"
+            const val eisen_l = "eisen_l"
+            const val eisen_ln = "eisen_ln"
+            const val eisen_g = "eisen_g"
+            const val original_l = "original_l"
+            const val original_ln = "original_ln"
+            const val original_g = "original_g"
+            const val bohemia_l = "bohemia_l"
+            const val bohemia_ln = "bohemia_ln"
+            const val bohemia_g = "bohemia_g"
+            const val funk = "funk"
+            const val sertanejo = "sertanejo"
+            const val pagode = "pagode"
+            const val forro = "forro"
+            const val eletronica = "eletronica"
+            const val rock = "rock"
+            const val samba = "samba"
+            const val pop = "pop"
+            const val rap = "rap"
+            const val hp = "hp"
+            const val jazz = "jazz"
+            const val s_musica = "s_musica"
+            const val regata = "regata"
+            const val bone = "bone"
+            const val chinelo = "chinelo"
+            const val bermuda = "bermuda"
+            const val time = "time"
+            const val a_la_carte = "a_la_carte"
+            const val hs_segunda = "hs_segunda"
+            const val he_segunda = "he_segunda"
+            const val hs_terca = "hs_terca"
+            const val he_terca = "he_terca"
+            const val hs_quarta = "hs_quarta"
+            const val he_quarta = "he_quarta"
+            const val hs_quinta = "hs_quinta"
+            const val he_quinta = "he_quinta"
+            const val hs_sexta = "hs_sexta"
+            const val he_sexta = "he_sexta"
+            const val hs_sabado = "hs_sabado"
+            const val he_sabado = "he_sabado"
+            const val hs_domingo = "hs_domingo"
+            const val he_domingo = "he_domingo"
+            const val botle = "botle"
+            const val litrao = "litrao"
+            const val comidaDeButeco = "comidaDeButeco"
+            const val drink = "drink"
+            const val espeto = "espeto"
+            const val link_logo ="espeto"
+            const val link_img_place = "link_img_place"
+            const val longNeck = "longNeck"
+            const val music = "music"
+            const val name = "name"
+            const val park = "park"
+            const val phone = "phone"
+            const val porcao = "porcao"
+            const val price = "price"
+            const val self_Service = "self_Service"
+            const val uf = "uf"
+            const val type = "type"
+            const val latitude = "latitude"
+            const val longitude = "longitude"
+            const val owner = "owner"
+            const val distancia = "distancia"
+            const val lata ="lata"
+            const val litrinho = "litrinho"
+            const val play_ground ="play_ground"
+            const val rua ="rua"
+            const val numero ="numero"
+            const val bairro = "bairro"
+            const val celular ="celular"
+            const val promocoes ="promocoes"
+            const val aberto_fechado= "aberto_fechado"
+            const val atualizacao ="atualizacao"
+            const val sinuca = "sinuca"
+
+        }
+
+    }
+
+
+
+
+
+}
